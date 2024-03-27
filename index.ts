@@ -1,4 +1,4 @@
-//1
+#! usr/bin/env node
 import inquirer from "inquirer";
 let mYbalance:number=20000; //dollars
 let pin:number=2020;

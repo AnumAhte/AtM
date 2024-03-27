@@ -2,7 +2,7 @@
   "dependencies": {
     "inquirer": "^9.2.16"
   },
-  "name": "atm",
+  "name": "20atm_coding",
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
@@ -10,6 +10,8 @@
     "@types/inquirer": "^9.0.7"
   },
   "type": "module",
+  "publishConfig": {"access": "public"},
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,4 +1,4 @@
-//1
+#! usr/bin/env node
 import inquirer from "inquirer";
 let mYbalance = 20000; //dollars
 let pin = 2020;
@@ -16,6 +16,7 @@ if (pinAnswer.q1 === pin) {
             type: "list",
             choices: ["withdraw", "check balance", "fastcash"]
         }]);
+    //2
     if (operationAnswer.operation === "withdraw") {
         let amountAnswer = await inquirer.prompt([{
                 name: "amount",
@@ -30,9 +31,11 @@ if (pinAnswer.q1 === pin) {
             console.log("insufficient balance");
         }
     }
+    //3
     else if (operationAnswer.operation === "check balance") {
         console.log(`Your balance is ${mYbalance}`);
     }
+    //4
     else if (operationAnswer.operation === "fastcash") {
         let fastcashAns = await inquirer.prompt([
             {
